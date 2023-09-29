@@ -1,45 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" translate="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YAYA TOOLS</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <header>
-
-<nav class="navbar">
-        <ul class="menu">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">PROJECT</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">CONTACT</a></li>
-        </ul>
-    </nav>        <h1>Selamat Datang di Yaya Tools</h1>
-        <p>Ini adalah kumpulan proyek HTML, CSS dan JavaScript.</p>
+        <h1>Yaya Tools</h1>
     </header>
-
-    <section id="projects">
-      
-      <a href="tools/tools-1/kalkulator.html">
-        <article class="project">
-            <h2>Kalkulator</h2>
-            <p>Proyek ini adalah kalkulator sederhana yang dibangun menggunakan HTML, CSS, dan JavaScript. Kalkulator ini dirancang untuk membantu pengguna melakukan perhitungan matematika dasar, seperti penambahan, pengurangan, perkalian, dan pembagian. Dengan antarmuka yang intuitif, pengguna dapat dengan mudah memasukkan angka dan operator yang diinginkan, serta melihat hasil perhitungannya secara instan.</p>
-        </article>
-      </a>
-      
-      <a href="tools/tools-2/konverter-suhu.html">
-        <article class="project">
-            <h2>Konverter Suhu</h2>
-            <p>Proyek ini adalah sebuah konverter suhu yang dibangun menggunakan HTML, CSS, dan JavaScript. Konverter suhu ini bertujuan untuk membantu pengguna mengubah nilai suhu dari satu skala ke skala lainnya dengan mudah dan cepat. Dengan antarmuka yang sederhana dan user-friendly, pengguna dapat memasukkan nilai suhu dalam berbagai skala (Celsius, Fahrenheit, Reamur, atau Kelvin) dan melihat hasilnya dalam skala lainnya secara instan.</p>
-        </article>
-      </a>
-
-    </section>
-
+    <nav>
+        <ul>
+            <li><i class="fas fa-home"></i> <a href="#">Home</a></li>
+            <li><i class="fas fa-folder"></i> <a href="#">Project</a></li>
+            <li><i class="fas fa-info-circle"></i> <a href="#">About</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="project">
+            <h2 class="project-name">Kalkulator</h2>
+            <img class="project-image" src="gambar_proyek1.jpg" alt="Gambar Proyek 1">
+            <div class="project-buttons">
+                <button class="project-button"><a href="tools/tools-1/kalkulator.html"><i class="fas fa-eye"></i> View Project</a></button>
+                <button class="project-button"><i class="fas fa-info"></i> Info Project</button>
+            </div>
+        </div>
+        <div class="project">
+            <h2 class="project-name">Konverter Suhu</h2>
+            <img class="project-image" src="gambar_proyek2.jpg" alt="Gambar Proyek 2">
+            <div class="project-buttons">
+                <button class="project-button"><a href="tools/tools-2/konverter-suhu.html"><i class="fas fa-eye"></i> View Project</a></button>
+                <button class="project-button"><i class="fas fa-info"></i> Info Project</button>
+            </div>
+        </div>
+        <!-- Tambahkan lebih banyak proyek di sini -->
+    </div>
+    
+    
+    <div class="contact">
+        <h2>About</h2>
+        <p>Ini adalah deskripsi singkat tentang Yaya Tools. Kami adalah platform untuk proyek HTML, CSS, dan JavaScript. Temukan proyek menarik dan inspiratif di sini!</p>
+        <p>Jika Anda memiliki pertanyaan atau komentar, silakan hubungi kami melalui email: contact@yayatools.com</p>
+        <div class="contact-icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-whatsapp"></i>
+        </div>
+    </div>
     <footer>
-        <p>Copyright &copy; 2023 Yaya Tools</p>
+       Copyright &copy; 2022 Yaya Tools
     </footer>
 </body>
 </html>

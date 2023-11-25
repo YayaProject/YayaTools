@@ -1,38 +1,39 @@
 // NILAI RAPOR SEMESTER 1 - 5
 function subtituteData() {
-  const pai = [84, 85, 92, 89, 94, 97, ""
+  const pai = [
   ];
-  const ppkn = [82, 82, 87, 87, 92, 93, ""
+  const ppkn = [
   ];
-  const bind = [85, 85, 85, 85, 95, 98, ""
+  const bind = [
   ];
-  const mtkw = [90, 90, 92, 92, 96, 98, ""
+  const mtkw = [
   ];
-  const sjr = [90, 91, 90, 91, 85, 97, ""
+  const sjr = [
   ];
-  const bing = [90, 90, 81, 81, 96, 96, ""
+  const bing = [
   ];
-  const snb = [83, 82, 85, 81, 89, 92, ""
+  const snb = [
   ];
-  const pjok = [80, 90, 85, 94, 87, 90, ""
+  const pjok = [
   ];
-  const pkwu = [84, 87, 86, 89, 94, 97, "" 
+  const pkwu = [
   ];
-  const mtkp = [85, 85, 90, 90, 96, 99, ""
+  const mtkp = [
   ];
-  const bio = [94, 95, 90, 90, 88, 94, ""
+  const bio = [
   ];
-  const fis = [76, 75, 73, 74, 95, 98, ""
+  const fis = [
   ];
-  const kim = [86, 86, 89, 89, 91, 95, ""
+  const kim = [
   ];
-  const eko = [85, 86, 85, 86, 86, 92, ""
+  const eko = [
   ];
-  const geo = [89, 89, 90, 91
+  const geo = [
   ];
-  const mlo = [88, 88, 95, 95
+  const mlo = [
   ];
  
+
 
 // DATA INPUT NILAI KE HTML
   document.getElementById("pai-s1-p").innerText = pai[0];
@@ -157,7 +158,7 @@ document.getElementById("fis-s1-k").innerText = fis[1];
   document.getElementById("mlo-s2-p").innerText = mlo[2];
   document.getElementById("mlo-s2-k").innerText = mlo[3];
   
-  
+ 
   
 // TOTAL DATA TIAP SEMESTER
 const arrays = [pai, ppkn, bind, mtkw, sjr, bing, snb, pjok, pkwu, mtkp, bio, fis, kim, eko, geo, mlo];
@@ -204,7 +205,7 @@ for (const arr of arrays) {
 }
 document.getElementById("jumlahSemester4").innerText = jumlahSemester4;
 
-let jumlahSemester5 = "";
+let jumlahSemester5 = 0;
 for (const arr of arrays) {
   if (arr.length > 6) {
     jumlahSemester5 += arr[6];
@@ -231,12 +232,12 @@ document.getElementById("rataRataSemester1").innerText = rataRataSemester1.toFix
 document.getElementById("rataRataSemester2").innerText = rataRataSemester2.toFixed(2);
 document.getElementById("rataRataSemester3").innerText = rataRataSemester3.toFixed(2);
 document.getElementById("rataRataSemester4").innerText = rataRataSemester4.toFixed(2);
-// document.getElementById("rataRataSemester5").innerText = rataRataSemester5.toFixed(2);
+document.getElementById("rataRataSemester5").innerText = rataRataSemester5.toFixed(2);
 
 
 
 // RATA-RATA SEMESTER 1 - 5
-const jumlahRataRataSemester = jumlahTotalSemester / 92;
+const jumlahRataRataSemester = jumlahTotalSemester / 106;
 document.getElementById("jumlahRataRataSemester").innerText = jumlahRataRataSemester.toFixed(2);
 
 
@@ -246,18 +247,18 @@ const kenaikanSemester1 = 0;
 const kenaikanSemester2 = rataRataSemester2 - rataRataSemester1;
 const kenaikanSemester3 = rataRataSemester3 - rataRataSemester2;
 const kenaikanSemester4 = rataRataSemester4 - rataRataSemester3;
-// const kenaikanSemester5 = rataRataSemester5 - rataRataSemester4;
+const kenaikanSemester5 = rataRataSemester5 - rataRataSemester4;
 
 document.getElementById("kenaikanSemester1").innerText = "+" + kenaikanSemester1.toFixed(2);
 document.getElementById("kenaikanSemester2").innerText = "+" + kenaikanSemester2.toFixed(2);
 document.getElementById("kenaikanSemester3").innerText = "+" + kenaikanSemester3.toFixed(2);
 document.getElementById("kenaikanSemester4").innerText = "+" + kenaikanSemester4.toFixed(2);
-// document.getElementById("kenaikanSemester5").innerText = "+" + kenaikanSemester5.toFixed(2);
+document.getElementById("kenaikanSemester5").innerText = "+" + kenaikanSemester5.toFixed(2);
 
 
 
 // KENAIKAN RATA-RATA SEMESTER 1-5
-const jumlahKenaikanSemester = (kenaikanSemester1 + kenaikanSemester2 + kenaikanSemester3 + kenaikanSemester4) / 3;
+const jumlahKenaikanSemester = (kenaikanSemester1 + kenaikanSemester2 + kenaikanSemester3 + kenaikanSemester4 + kenaikanSemester5) / 4;
 document.getElementById("jumlahKenaikanSemester").innerText = "+" + jumlahKenaikanSemester.toFixed(2);
 
 
@@ -285,7 +286,7 @@ const mloTotal = hitungTotal(mlo);
 
 
 // RATA-RATA TIAP MATA PELAJARAN
-const totalSemester = 6;
+const totalSemester = 7;
 
 const paiRataRata = paiTotal / totalSemester;
 const ppknRataRata = ppknTotal / totalSemester;
@@ -355,50 +356,3 @@ for (var i = 0; i < dataNilai.length; i++) {
 }
 }
 subtituteData();
-
-
-
-// GRAFIK RATA-RATA NILAI TIAP SEMESTER
-Chart.defaults.global.defaultFontFamily = "Lato";
-Chart.defaults.global.defaultFontSize = 12;
-
-var speedCanvas = document.getElementById("speedChart");
-
-var speedData = {
-  labels: ["S1", "S2", "S3", "S4", "S5"],
-  datasets: [{
-    label: "Nilai",
-    data: [86.16, 87.47, 91.71, 95.43],
-    backgroundColor: 'rgba(30, 144, 255, 0.2)',
-    borderColor: '#1e90ff',
-    borderWidth: 1,
-    
-  }
-  , {
-    type: 'line',
-    label: 'Rata-Rata',
-    data: [88.86, 88.86, 88.86, 88.86],
-    fill: false,
-    backgroundColor: 'rgba(30, 144, 255, 0.2)',
-    borderColor: '#1e90ff',
-      borderWidth: 1,
-      hidden: true,
-  }]
-};
-
-var chartOptions = {
-  legend: {
-    display: true,
-    position: 'top',
-    labels: {
-      boxWidth: 50,
-      fontColor: 'black',
-    }
-  }
-};
-
-var lineChart = new Chart(speedCanvas, {
-  type: 'bar',
-  data: speedData,
-  options: chartOptions
-});

@@ -1,0 +1,132 @@
+html {
+  font-family: Lato;
+}
+.tabel1 , .tabel2 {
+  border-collapse: collapse;
+  padding: 8px 20px;
+  border: 2px solid black;
+  width: 100%;
+  text-align: center;
+}
+.tabel1 thead tr th {
+  font-size: 15px;
+}
+.tabel1 tbody tr td {
+  font-size: 13px;
+}
+.tabel2 thead tr th {
+  font-size: 15px;
+}
+.tabel2 tbody tr td {
+  font-size: 13px;
+}
+#tabelNilai {
+  margin: 0 auto;
+  border-collapse: collapse;
+  padding: 8px 20px;
+  width: 100%;
+  border: 2px solid black;
+}
+#tabelNilai thead tr th {
+  background-color: #1e90ff;
+  font-size: 15px;
+}
+#tabelNilai tbody td{
+  font-size: 13px;
+  border-width: 1px 2px 1px 2px;
+  border-color: black;
+}
+.head {
+  font-size: 10px;
+}
+.box {
+  width: 7%;
+}
+.box2 {
+  width: 10%;
+}
+th,td,
+tr{
+  padding: 8px 20px;
+}
+th, td {
+  border-top: 1px;
+  border-bottom: 1px;
+  border-style: solid;
+}
+.line-top {
+  border-top: 2px solid;
+}
+h5 {
+  padding: 10px 0;
+  width: 60%;
+  background-color: white;
+  border: 1px solid #1e90ff;
+  text-align: center;
+  margin: 0 auto;
+  color: #1e90ff;
+  border-radius: 40px;
+}
+h5:hover {
+  color: white;
+  background-color: #1e90ff;
+}
+a {
+  text-decoration: none;
+}
+.warna1 {
+  background-color: #1e90ff;
+  font-size: 20px;
+}
+footer {
+  text-align: center;
+  font-size: 12px;
+}
+p {
+  font-size: 15px;
+}
+h1 {
+  text-align: center;
+}
+.tabel1 tbody tr:nth-child(even) {
+    background-color: #1ef2ff;
+}
+#tabelNilai tr:nth-child(even) {
+    background-color: #1ef2ff;
+}
+
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 23px;
+  }
+  .tabel1,
+  th, td,
+  tr {
+    padding: 4px 3px;
+  }
+  .tabel1 thead tr th {
+  font-size: 11px;
+}
+.tabel2 thead tr th {
+  font-size: 11px;
+}
+#tabelNilai thead tr th {
+  font-size: 11px;
+}
+.tabel1 tbody tr td {
+  font-size: 11px;
+}
+.tabel2 tbody tr td {
+  font-size: 11px;
+}
+#tabelNilai tbody tr td {
+  font-size: 11px;
+}
+  tr {
+    font-size: 10px;
+  }
+  .warna1 {
+    font-size: 7px;
+  }
+}

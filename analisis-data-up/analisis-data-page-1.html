@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#CDF281" />
+    <title>ANALISIS DATA HASIL PENGAMATAN PERTUMBUHAN TANAMAN KANGKUNG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="analisis-data.css" />
+  </head>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-CGKTDTK7Y7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-CGKTDTK7Y7");
+  </script>
+
+  <body>
+    <nav>
+      <details>
+        <summary>MENU<span id="right">BIOLOGI KELAS XII MIPA 4</span></summary>
+        <ul id="menu1">
+          <a href="../proyek-biologi.html"><li class="menu">> BERANDA</li></a>
+          <a href="#"><li class="menu">> ANALISIS DATA</li></a>
+          <a href="../dokumentasi/dokumentasi.html"
+            ><li class="menu">> DOKUMENTASI</li></a
+          >
+        </ul>
+      </details>
+    </nav>
+
+    <center>
+      <h1>
+        ANALISIS DATA
+        <br />
+        HASIL PENGAMATAN PERTUMBUHAN
+        <br />
+        TANAMAN KANGKUNG
+      </h1>
+
+      <table align="center" class="tabel1" id="tabel-nilai">
+        <tr class="warna1">
+          <th class="box-p" rowspan="3">Hari</th>
+          <th colspan="3">Pertambahan Panjang Tanaman Kangkung (cm)</th>
+          <th class="box-p" rowspan="3">Rata-Rata (cm)</th>
+          <th class="box-p" rowspan="3">Pertambahan Panjang Per Hari (cm)</th>
+        </tr>
+        <tr class="warna2 , line-top">
+          <th colspan="3">Air Biasa</th>
+        </tr>
+        <tr class="line-top , warna3">
+          <th class="box-p">A1</th>
+          <th class="box-p">A2</th>
+          <th class="box-p">A3</th>
+        </tr>
+        <tr class="line-top">
+          <th>Ke-2</th>
+          <th id="day2-a1"></th>
+          <th id="day2-a2"></th>
+          <th id="day2-a3"></th>
+          <th id="rata-rata"></th>
+          <th id="day2-selisih-biasa"></th>
+        </tr>
+        <tr class="line-top , warna4">
+          <th>Ke-4</th>
+          <th id="day4-a1"></th>
+          <th id="day4-a2"></th>
+          <th id="day4-a3"></th>
+          <th id="rata-rata"></th>
+          <th id="day4-selisih-biasa"></th>
+        </tr>
+        <tr class="line-top">
+          <th>Ke-6</th>
+          <th id="day6-a1"></th>
+          <th id="day6-a2"></th>
+          <th id="day6-a3"></th>
+          <th id="rata-rata"></th>
+          <th id="day6-selisih-biasa"></th>
+        </tr>
+        <tr class="line-top , warna4">
+          <th>Ke-8</th>
+          <th id="day8-a1"></th>
+          <th id="day8-a2"></th>
+          <th id="day8-a3"></th>
+          <th id="rata-rata"></th>
+          <th id="day8-selisih-biasa"></th>
+        </tr>
+        <tr class="line-top">
+          <th>Ke-10</th>
+          <th id="day10-a1"></th>
+          <th id="day10-a2"></th>
+          <th id="day10-a3"></th>
+          <th id="rata-rata"></th>
+          <th id="day10-selisih-biasa"></th>
+        </tr>
+        <tr class="line-top , warna4">
+          <th>Ke-12</th>
+          <th id="day12-a1"></th>
+          <th id="day12-a2"></th>
+          <th id="day12-a3"></th>
+          <th id="rata-rata"></th>
+          <th id="day12-selisih-biasa"></th>
+        </tr>
+        <tr class="line-top">
+          <th>Ke-14</th>
+          <th id="day14-a1"></th>
+          <th id="day14-a2"></th>
+          <th id="day14-a3"></th>
+          <th id="rata-rata"></th>
+          <th id="day14-selisih-biasa"></th>
+        </tr>
+        <tr class="line-top , warna4">
+          <th>Ke-16</th>
+          <th id="day16-a1"></th>
+          <th id="day16-a2"></th>
+          <th id="day16-a3"></th>
+          <th id="rata-rata"></th>
+          <th id="day16-selisih-biasa"></th>
+        </tr>
+        <tr class="line-top">
+          <th>Ke-18</th>
+          <th id="day18-a1"></th>
+          <th id="day18-a2"></th>
+          <th id="day18-a3"></th>
+          <th id="rata-rata"></th>
+          <th id="day18-selisih-biasa"></th>
+        </tr>
+        <tr class="line-top , warna4">
+          <th>Ke-20</th>
+          <th id="day20-a1"></th>
+          <th id="day20-a2"></th>
+          <th id="day20-a3"></th>
+          <th id="rata-rata"></th>
+          <th id="day20-selisih-biasa"></th>
+        </tr>
+        <tr class="line-top">
+          <th>Ke-22</th>
+          <th id="day22-a1"></th>
+          <th id="day22-a2"></th>
+          <th id="day22-a3"></th>
+          <th id="rata-rata"></th>
+          <th id="day22-selisih-biasa"></th>
+        </tr>
+        <tr class="line-top , warna4">
+          <th>Ke-24</th>
+          <th id="day24-a1"></th>
+          <th id="day24-a2"></th>
+          <th id="day24-a3"></th>
+          <th id="rata-rata"></th>
+          <th id="day24-selisih-biasa"></th>
+        </tr>
+        <tr class="line-top">
+          <th>Ke-26</th>
+          <th id="day26-a1"></th>
+          <th id="day26-a2"></th>
+          <th id="day26-a3"></th>
+          <th id="rata-rata"></th>
+          <th id="day26-selisih-biasa"></th>
+        </tr>
+        <tr class="line-top , warna4">
+          <th>Ke-28</th>
+          <th id="day28-a1"></th>
+          <th id="day28-a2"></th>
+          <th id="day28-a3"></th>
+          <th id="rata-rata"></th>
+          <th id="day28-selisih-biasa"></th>
+        </tr>
+        <tr class="line-top">
+          <th>Ke-30</th>
+          <th id="day30-a1"></th>
+          <th id="day30-a2"></th>
+          <th id="day30-a3"></th>
+          <th id="rata-rata"></th>
+          <th id="day30-selisih-biasa"></th>
+        </tr>
+      </table>
+    </center>
+
+    <p class="text">Grafik Rata-Rata Panjang Tanaman Kangkung (cm)</p>
+
+    <canvas id="speedChart" width="300" height="300"></canvas>
+    <br />
+    <p class="text">
+      Grafik Pertambahan Panjang Per Hari Tanaman Kangkung (cm)
+    </p>
+
+    <canvas id="speedChart1" width="300" height="300"></canvas>
+
+    <br />
+    <footer>
+      <h3 id="head-footer">ANGGOTA KELOMPOK 2 :</h3>
+
+      <ol>
+        <li class="li-footer">NURHIDAYAT</li>
+        <li class="li-footer">A. MUQADDAS BAIHAQI</li>
+        <li class="li-footer">ALDA SUCI PUTRI</li>
+        <li class="li-footer">ALIFAH MUZAYYANAH ANSAR</li>
+        <li class="li-footer">WINDA NUR AMELIA</li>
+      </ol>
+
+      <p id="footer">Copyright © 2023 Yaya Project</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+    <script src="data-pengukuran/data-pengukuran-page-1.js"></script>
+
+    <script src="grafik/grafik-page-1.js"></script>
+  </body>
+</html>

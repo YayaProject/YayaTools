@@ -1,0 +1,186 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+.menu {
+  font-size: 20px;
+  display: block;
+  background-color: #cdf281;
+  font-weight: 700;
+  padding: 10px 10px 10px 10px;
+  border-bottom: 3px solid black;
+}
+.menu:hover {
+  background-color: black;
+}
+#menu1 {
+  background-color: #cdf281;
+  padding: 0;
+}
+#menu-page {
+  color: #737373;
+  margin: 0 auto;
+  border: 1px solid #9ca3af;
+  width: 90%;
+  background-color: #f9fafb;
+}
+#menu-text {
+  padding-left: 20px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.li-menu {
+  color: #737373;
+}
+.li-menu:hover {
+  color: #d4d4d4;
+}
+summary {
+  font-size: 20px;
+  padding: 10px;
+  font-weight: 700;
+  background-color: #cdf281;
+}
+#right {
+  float: right;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: #cdf281;
+}
+.tabel1 {
+  border-collapse: collapse;
+  margin-bottom: 15%;
+  padding: 8px 20px;
+  border: 2px solid black;
+  width: 100%;
+}
+.box {
+  width: 16.5%;
+}
+.box2 {
+  width: 10%;
+}
+.box3 {
+  width: 13%;
+  padding: 2px;
+}
+.box4 {
+  width: 5.5%;
+}
+.box-p {
+  width: 16.6%;
+}
+th,
+tr {
+  padding: 8px 0;
+}
+th {
+  font-weight: 500;
+  border-top: 1px;
+  border-bottom: 1px;
+  border-style: solid;
+}
+h1 {
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+h3 {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.line-top {
+  border-top: 2px solid;
+}
+.warna1 {
+  background-color: #cdf281;
+  font-size: 20px;
+}
+.warna2 {
+  background-color: #dbf2ab;
+}
+.warna3 {
+  background-color: #e8f2d4;
+}
+.warna4 {
+  background-color: #eef2e6;
+}
+a {
+  color: black;
+}
+.text {
+  font-weight: 500;
+  font-size: 15px;
+}
+p {
+  font-weight: 300;
+  font-size: 14px;
+}
+footer {
+  background-color: #cdf281;
+}
+#footer {
+  padding: 5px;
+  background-color: black;
+  color: #cdf281;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 300;
+  margin: 0;
+}
+#head-footer {
+  margin: 15px 0;
+  padding-top: 15px;
+  text-align: center;
+}
+ol {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.li-footer {
+  margin-bottom: 10px;
+  display: block;
+  font-weight: 400;
+  font-size: 15px;
+}
+li {
+  padding-right: 4em;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+  p {
+    font-size: 12px;
+  }
+  .tabel1,
+  th,
+  tr {
+    padding: 4px 0;
+  }
+  tr {
+    font-size: 7px;
+  }
+  .warna1 {
+    font-size: 7px;
+  }
+  summary,
+  .menu {
+    font-size: 16px;
+  }
+  .li-footer {
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+  ol {
+    text-align: left;
+    display: block;
+  }
+}

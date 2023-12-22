@@ -1,36 +1,36 @@
 // NILAI RAPOR SEMESTER 1 - 5
 function subtituteData() {
-    const pai = [ 90, 90, 91, 93, 94, 96, 97
+      const pai = [
   ];
-  const ppkn = [ 90, 92, 88, 88, 91, 93, 98
+  const ppkn = [
   ];
-  const bind = [ 85, 85, 86, 86, 95, 96, 97
+  const bind = [
   ];
-  const mtkw = [ 91, 91, 93, 94, 87, 95, 97
+  const mtkw = [
   ];
-  const sjr = [ 88, 89, 90, 91, 89, 94, 95
+  const sjr = [
   ];
-  const bing = [ 89, 88, 89, 88, 93, 98, 89
+  const bing = [
   ];
-  const snb = [ 79, 79, 81, 84, 89, 95, 96
+  const snb = [
   ];
-  const pjok = [ 88, 89, 90, 90, 89, 94, 94
+  const pjok = [
   ];
-  const pkwu = [ 87, 89, 91, 91, 80, 88, 94
+  const pkwu = [
   ];
-  const mtkp = [ 88, 89, 90, 91, 89, 95, 99
+  const mtkp = [
   ];
-  const bio = [ 94, 89, 94, 96, 89, 90, 93
+  const bio = [
   ];
-  const fis = [ 78, 95, 70, 71, 88, 93, 92
+  const fis = [
   ];
-  const kim = [ 87, 89, 87, 89, 88, 89, 91
+  const kim = [
   ];
-  const eko = [ 87, 88, 90, 90, 89, 90, 91
+  const eko = [
   ];
-  const geo = [ 90, 90, 88, 91
+  const geo = [
   ];
-  const mlo = [ 96, 95, 98, 95
+  const mlo = [
   ];
  
 

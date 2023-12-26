@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width" />
   <meta name="theme-color" content="#1e90ff" />
   <link rel="icon" href="../../image/image-main/icon.png" />
-  <title>APLIKASI NILAI RAPORT SEMESTER I - V | YAYA PROJECT</title>
+  <title>RATA-RATA NILAI SEMESTER I - V | YAYA PROJECT</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato'>
@@ -22,15 +22,16 @@
   </script>
  </head>
  <body>
-  <h1> APLIKASI NILAI RAPORT <br> SEMESTER I - V </h1>
+  <h1>RATA-RATA NILAI<br> SEMESTER I - V </h1>
   <br />
-  <h3>A. Daftar Nilai Setiap Mata Pelajaran</h3>
+
   <table class="tabel1">
    <thead>
     <tr class="warna1">
      <th class="head , box" rowspan="3">NO</th>
      <th class="head" rowspan="2">MATA PELAJARAN</th>
      <th class="head" colspan="5">SEMESTER</th>
+     <th class="head" rowspan="2">RATA-RATA</th>
     </tr>
     <tr class="warna1 , line-top">
      <th class="head , box">I</th>
@@ -49,6 +50,7 @@
      <td id="pai-s3"></td>
      <td id="pai-s4"></td>
      <td id="pai-s5"></td>
+     <td id="paiRataRata"></td>
     </tr>
     <tr>
      <td>2</td>
@@ -58,6 +60,7 @@
      <td id="ppkn-s3"></td>
      <td id="ppkn-s4"></td>
      <td id="ppkn-s5"></td>
+     <td id="ppknRataRata"></td>
     </tr>
     <tr>
      <td>3</td>
@@ -67,6 +70,7 @@
      <td id="bind-s3"></td>
      <td id="bind-s4"></td>
      <td id="bind-s5"></td>
+     <td id="bindRataRata"></td>
     </tr>
     <tr>
      <td>4</td>
@@ -76,6 +80,7 @@
      <td id="mtkw-s3"></td>
      <td id="mtkw-s4"></td>
      <td id="mtkw-s5"></td>
+     <td id="mtkwRataRata"></td>
     </tr>
     <tr>
      <td>5</td>
@@ -85,6 +90,7 @@
      <td id="sjr-s3"></td>
      <td id="sjr-s4"></td>
      <td id="sjr-s5"></td>
+     <td id="sjrRataRata"></td>
     </tr>
     <tr>
      <td>6</td>
@@ -94,6 +100,7 @@
      <td id="bing-s3"></td>
      <td id="bing-s4"></td>
      <td id="bing-s5"></td>
+     <td id="bingRataRata"></td>
     </tr>
     <tr>
      <td>7</td>
@@ -103,6 +110,7 @@
      <td id="snb-s3"></td>
      <td id="snb-s4"></td>
      <td id="snb-s5"></td>
+     <td id="snbRataRata"></td>
     </tr>
     <tr>
      <td>8</td>
@@ -112,6 +120,7 @@
      <td id="pjok-s3"></td>
      <td id="pjok-s4"></td>
      <td id="pjok-s5"></td>
+     <td id="pjokRataRata"></td>
     </tr>
     <tr>
      <td>9</td>
@@ -121,6 +130,7 @@
      <td id="pkwu-s3"></td>
      <td id="pkwu-s4"></td>
      <td id="pkwu-s5"></td>
+     <td id="pkwuRataRata"></td>
     </tr>
     <tr>
      <td>10</td>
@@ -130,6 +140,7 @@
      <td id="mtkp-s3"></td>
      <td id="mtkp-s4"></td>
      <td id="mtkp-s5"></td>
+     <td id="mtkpRataRata"></td>
     </tr>
     <tr>
      <td>11</td>
@@ -139,6 +150,7 @@
      <td id="bio-s3"></td>
      <td id="bio-s4"></td>
      <td id="bio-s5"></td>
+     <td id="bioRataRata"></td>
     </tr>
     <tr>
      <td>12</td>
@@ -148,6 +160,7 @@
      <td id="fis-s3"></td>
      <td id="fis-s4"></td>
      <td id="fis-s5"></td>
+     <td id="fisRataRata"></td>
     </tr>
     <tr>
      <td>13</td>
@@ -157,6 +170,7 @@
      <td id="kim-s3"></td>
      <td id="kim-s4"></td>
      <td id="kim-s5"></td>
+     <td id="kimRataRata"></td>
     </tr>
     <tr>
      <td>14</td>
@@ -166,6 +180,7 @@
      <td id="eko-s3"></td>
      <td id="eko-s4"></td>
      <td id="eko-s5"></td>
+     <td id="ekoRataRata"></td>
     </tr>
     <tr>
      <td>15</td>
@@ -175,6 +190,7 @@
      <td id="geo-s3"></td>
      <td id="geo-s4"></td>
      <td id="geo-s5"></td>
+     <td id="geoRataRata"></td>
     </tr>
     <tr>
      <td>16</td>
@@ -184,29 +200,13 @@
      <td id="mlo-s3"></td>
      <td id="mlo-s4"></td>
      <td id="mlo-s5"></td>
+     <td id="mloRataRata"></td>
     </tr>
-   </tbody>
-  </table>
-  <br>
-  <h3>B. Daftar Jumlah Nilai, Rata-Rata, dan Kenaikan Tiap Semester</h3>
-  <table class="tabel2">
-   <thead>
-    <tr class="warna1">
-     <th class="head" rowspan="2">KETERANGAN</th>
-     <th class="head" colspan="5">SEMESTER</th>
-     <th class="box" rowspan="2">TOTAL</th>
+    <tr class="line-top , warna1">
+      <td colspan="8"></td>
     </tr>
-    <tr class="warna1 , line-top">
-     <th class="box2 , head">I</th>
-     <th class="box2 , head">II</th>
-     <th class="box2 , head">III</th>
-     <th class="box2 , head">IV</th>
-     <th class="box2 , head">V</th>
-    </tr>
-   </thead>
-   <tbody>
-    <tr class="line-top">
-     <td>JUMLAH NILAI</td>
+        <tr class="line-top" style="background-color:white">
+     <td colspan="2">JUMLAH NILAI</td>
      <td id="jumlahSemester1"></td>
      <td id="jumlahSemester2"></td>
      <td id="jumlahSemester3"></td>
@@ -215,7 +215,7 @@
      <td id="jumlahTotalSemester"></td>
     </tr>
     <tr class="line-top">
-     <td>RATA-RATA</td>
+     <td colspan="2">RATA-RATA</td>
      <td id="rataRataSemester1"></td>
      <td id="rataRataSemester2"></td>
      <td id="rataRataSemester3"></td>
@@ -223,18 +223,8 @@
      <td id="rataRataSemester5"></td>
      <td id="jumlahRataRataSemester"></td>
     </tr>
-    <tr class="line-top">
-     <td>KENAIKAN TIAP SEMESTER</td>
-     <td id="kenaikanSemester1"></td>
-     <td id="kenaikanSemester2"></td>
-     <td id="kenaikanSemester3"></td>
-     <td id="kenaikanSemester4"></td>
-     <td id="kenaikanSemester5"></td>
-     <td id="jumlahKenaikanSemester"></td>
-    </tr>
    </tbody>
   </table>
-  <br>
   <br>
   <footer> Copyright © 2023 Yaya Project </footer>
   <script src="./rata-rata-nilai.js"></script>

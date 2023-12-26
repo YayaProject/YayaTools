@@ -1,39 +1,89 @@
 function subtituteData() {
 // FORMAT PENGISIAN NILAI RAPOR SEMESTER 1 - 5
-// const mapel = [S1-P, S1-K, S2-P, S2-K, 0, 0, S3, S4, S5]
+// const mapel = [
+// S1-P, S1-K, S2-P, S2-K, 
+// 0, 0, 
+// S3, S4, S5
+// ];
 
 	const pai = [
-  ];
-  const ppkn = [
-  ];
-  const bind = [
-  ];
-  const mtkw = [
-  ];
-  const sjr = [
-  ];
-  const bing = [
-  ];
-  const snb = [
-  ];
-  const pjok = [
-  ];
-  const pkwu = [
-  ];
-  const mtkp = [
-  ];
-  const bio = [
-  ];
-  const fis = [
-  ];
-  const kim = [
-  ];
-  const eko = [
-  ];
-  const geo = [
-  ];
-  const mlo = [
-  ];
+	
+	0, 0, 
+	
+	];
+	const ppkn = [
+	
+	0, 0, 
+	
+	];
+	const bind = [
+	
+	0, 0,
+	
+	];
+	const mtkw = [
+	
+	0, 0, 
+	
+	];
+	const sjr = [
+	
+	0, 0, 
+	
+	];
+	const bing = [
+	
+	0, 0, 
+	
+	];
+	const snb = [
+	
+	0, 0, 
+	
+	];
+	const pjok = [
+	
+	0, 0, 87, 
+	
+	];
+	const pkwu = [
+	
+	0, 0, 
+	
+	];
+	const mtkp = [
+	
+	0, 0,
+	
+	];
+	const bio = [
+	
+	0, 0, 
+	
+	];
+	const fis = [
+	
+	0, 0, 
+	
+	];
+	const kim = [
+	
+	0, 0,
+	
+	];
+	const eko = [
+	
+	0, 0,
+	
+	];
+	const geo = [
+	
+	0, 0
+	];
+	const mlo = [
+	
+	0, 0
+	];
 
 	const arrays = [pai, ppkn, bind, mtkw, sjr, bing, snb, pjok, pkwu, mtkp, bio, fis, kim, eko, geo, mlo];
 
@@ -195,22 +245,60 @@ function subtituteData() {
 	const jumlahRataRataSemester = (rataRataSemester1 + rataRataSemester2 + rataRataSemester3 + rataRataSemester4 + rataRataSemester5) / 5;
 	document.getElementById("jumlahRataRataSemester").innerText = jumlahRataRataSemester.toFixed(2);
 
-	// KENAIKAN TIAP SEMESTER
-	const kenaikanSemester1 = 0;
-	const kenaikanSemester2 = rataRataSemester2 - rataRataSemester1;
-	const kenaikanSemester3 = rataRataSemester3 - rataRataSemester2;
-	const kenaikanSemester4 = rataRataSemester4 - rataRataSemester3;
-	const kenaikanSemester5 = rataRataSemester5 - rataRataSemester4;
+	// TOTAL NILAI TIAP MATA PELAJARAN
+	const hitungTotal = (arr) => arr.slice(4, 9).reduce((total, nilai) => total + nilai, 0);
 
-	document.getElementById("kenaikanSemester1").innerText = "+" + kenaikanSemester1.toFixed(2);
-	document.getElementById("kenaikanSemester2").innerText = "+" + kenaikanSemester2.toFixed(2);
-	document.getElementById("kenaikanSemester3").innerText = "+" + kenaikanSemester3.toFixed(2);
-	document.getElementById("kenaikanSemester4").innerText = "+" + kenaikanSemester4.toFixed(2);
-	document.getElementById("kenaikanSemester5").innerText = "+" + kenaikanSemester5.toFixed(2);
+	const paiTotal = hitungTotal(pai);
+	const ppknTotal = hitungTotal(ppkn);
+	const bindTotal = hitungTotal(bind);
+	const mtkwTotal = hitungTotal(mtkw);
+	const sjrTotal = hitungTotal(sjr);
+	const bingTotal = hitungTotal(bing);
+	const snbTotal = hitungTotal(snb);
+	const pjokTotal = hitungTotal(pjok);
+	const pkwuTotal = hitungTotal(pkwu);
+	const mtkpTotal = hitungTotal(mtkp);
+	const bioTotal = hitungTotal(bio);
+	const fisTotal = hitungTotal(fis);
+	const kimTotal = hitungTotal(kim);
+	const ekoTotal = hitungTotal(eko);
+	const geoTotal = hitungTotal(geo);
+	const mloTotal = hitungTotal(mlo);
 
-	// KENAIKAN RATA-RATA SEMESTER 1-5
-	const jumlahKenaikanSemester = (kenaikanSemester1 + kenaikanSemester2 + kenaikanSemester3 + kenaikanSemester4 + kenaikanSemester5) / 4;
-	document.getElementById("jumlahKenaikanSemester").innerText = "+" + jumlahKenaikanSemester.toFixed(2);
+	// RATA-RATA TIAP MATA PELAJARAN
+	const paiRataRata = paiTotal / 5;
+	const ppknRataRata = ppknTotal / 5;
+	const bindRataRata = bindTotal / 5;
+	const mtkwRataRata = mtkwTotal / 5;
+	const sjrRataRata = sjrTotal / 5;
+	const bingRataRata = bingTotal / 5;
+	const snbRataRata = snbTotal / 5;
+	const pjokRataRata = pjokTotal / 5;
+	const pkwuRataRata = pkwuTotal / 5;
+	const mtkpRataRata = mtkpTotal / 5;
+	const bioRataRata = bioTotal / 5;
+	const fisRataRata = fisTotal / 5;
+	const kimRataRata = kimTotal / 5;
+	const ekoRataRata = ekoTotal / 5;
+	const geoRataRata = geoTotal / 2;
+	const mloRataRata = mloTotal / 2;
+
+  document.getElementById("paiRataRata").innerText = paiRataRata.toFixed(2);
+  document.getElementById("ppknRataRata").innerText = ppknRataRata.toFixed(2);
+  document.getElementById("bindRataRata").innerText = bindRataRata.toFixed(2);
+  document.getElementById("mtkwRataRata").innerText = mtkwRataRata.toFixed(2);
+  document.getElementById("sjrRataRata").innerText = sjrRataRata.toFixed(2);
+  document.getElementById("bingRataRata").innerText = bingRataRata.toFixed(2);
+  document.getElementById("snbRataRata").innerText = snbRataRata.toFixed(2);
+  document.getElementById("pjokRataRata").innerText = pjokRataRata.toFixed(2);
+  document.getElementById("pkwuRataRata").innerText = pkwuRataRata.toFixed(2);
+  document.getElementById("mtkpRataRata").innerText = mtkpRataRata.toFixed(2);
+  document.getElementById("bioRataRata").innerText = bioRataRata.toFixed(2);
+  document.getElementById("fisRataRata").innerText = fisRataRata.toFixed(2);
+  document.getElementById("kimRataRata").innerText = kimRataRata.toFixed(2);
+  document.getElementById("ekoRataRata").innerText = ekoRataRata.toFixed(2);
+  document.getElementById("geoRataRata").innerText = geoRataRata.toFixed(2);
+  document.getElementById("mloRataRata").innerText = mloRataRata.toFixed(2);
 }
 
 document.addEventListener("DOMContentLoaded", function() {

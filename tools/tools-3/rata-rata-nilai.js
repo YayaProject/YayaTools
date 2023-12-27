@@ -1,4 +1,4 @@
-function subtituteData() {
+
 // FORMAT PENGISIAN NILAI RAPOR SEMESTER 1 - 5
 // const mapel = [
 // S1-P, S1-K, S2-P, S2-K, 
@@ -6,84 +6,96 @@ function subtituteData() {
 // S3, S4, S5
 // ];
 
-	const pai = [
 	
-	0, 0, 
-	
-	];
-	const ppkn = [
-	
-	0, 0, 
-	
-	];
-	const bind = [
-	
-	0, 0,
-	
-	];
-	const mtkw = [
-	
-	0, 0, 
-	
-	];
-	const sjr = [
-	
-	0, 0, 
-	
-	];
-	const bing = [
-	
-	0, 0, 
-	
-	];
-	const snb = [
-	
-	0, 0, 
-	
-	];
-	const pjok = [
-	
-	0, 0, 87, 
-	
-	];
-	const pkwu = [
-	
-	0, 0, 
-	
-	];
-	const mtkp = [
-	
-	0, 0,
-	
-	];
-	const bio = [
-	
-	0, 0, 
-	
-	];
-	const fis = [
-	
-	0, 0, 
-	
-	];
-	const kim = [
-	
-	0, 0,
-	
-	];
-	const eko = [
-	
-	0, 0,
-	
-	];
-	const geo = [
-	
-	0, 0
-	];
-	const mlo = [
-	
-	0, 0
-	];
+  let pai = [];
+  let ppkn = [];
+  let bind = [];
+let mtkw = [];
+let sjr = [];
+let bing = [];
+let snb = [];
+let pjok = [];
+let pkwu = [];
+let mtkp = [];
+let bio = [];
+let fis = [];
+let kim = [];
+let eko = [];
+let geo = [];
+let mlo = [];
+
+  function simpanNilai() {
+    for (let i = 1; i <= 9; i++) {
+      const nilaiPAI = parseInt(document.getElementById(`pai${i}`).value);
+      pai.push(nilaiPAI);
+    }
+
+    for (let i = 1; i <= 9; i++) {
+      const nilaiPPKN = parseInt(document.getElementById(`ppkn${i}`).value);
+      ppkn.push(nilaiPPKN);
+    }
+    for (let i = 1; i <= 9; i++) {
+      const nilaiBIND = parseInt(document.getElementById(`bind${i}`).value);
+      bind.push(nilaiBIND);
+    }
+    for (let i = 1; i <= 9; i++) {
+    const nilaiMTKW = parseInt(document.getElementById(`mtkw${i}`).value);
+    mtkw.push(nilaiMTKW);
+}
+for (let i = 1; i <= 9; i++) {
+    const nilaiSJR = parseInt(document.getElementById(`sjr${i}`).value);
+    sjr.push(nilaiSJR);
+}
+for (let i = 1; i <= 9; i++) {
+    const nilaiBing = parseInt(document.getElementById(`bing${i}`).value);
+    bing.push(nilaiBing);
+}
+for (let i = 1; i <= 9; i++) {
+    const nilaiSNB = parseInt(document.getElementById(`snb${i}`).value);
+    snb.push(nilaiSNB);
+}
+for (let i = 1; i <= 9; i++) {
+    const nilaiPjok = parseInt(document.getElementById(`pjok${i}`).value);
+    pjok.push(nilaiPjok);
+}
+for (let i = 1; i <= 9; i++) {
+    const nilaiPKWU = parseInt(document.getElementById(`pkwu${i}`).value);
+    pkwu.push(nilaiPKWU);
+}
+for (let i = 1; i <= 9; i++) {
+    const nilaiMTKP = parseInt(document.getElementById(`mtkp${i}`).value);
+    mtkp.push(nilaiMTKP);
+}
+for (let i = 1; i <= 9; i++) {
+    const nilaiBio = parseInt(document.getElementById(`bio${i}`).value);
+    bio.push(nilaiBio);
+}
+for (let i = 1; i <= 9; i++) {
+    const nilaiFis = parseInt(document.getElementById(`fis${i}`).value);
+    fis.push(nilaiFis);
+}
+for (let i = 1; i <= 9; i++) {
+    const nilaiKim = parseInt(document.getElementById(`kim${i}`).value);
+    kim.push(nilaiKim);
+}
+for (let i = 1; i <= 9; i++) {
+    const nilaiEko = parseInt(document.getElementById(`eko${i}`).value);
+    eko.push(nilaiEko);
+}
+for (let i = 1; i <= 5; i++) {
+    const nilaiGeo = parseInt(document.getElementById(`geo${i}`).value);
+    geo.push(nilaiGeo);
+}
+for (let i = 1; i <= 5; i++) {
+    const nilaiMlo = parseInt(document.getElementById(`mlo${i}`).value);
+    mlo.push(nilaiMlo);
+}
+
+
+        document.getElementById("hideThis").style.display = "none";
+    
+  
+
 
 	const arrays = [pai, ppkn, bind, mtkw, sjr, bing, snb, pjok, pkwu, mtkp, bio, fis, kim, eko, geo, mlo];
 
@@ -299,8 +311,6 @@ function subtituteData() {
   document.getElementById("ekoRataRata").innerText = ekoRataRata.toFixed(2);
   document.getElementById("geoRataRata").innerText = geoRataRata.toFixed(2);
   document.getElementById("mloRataRata").innerText = mloRataRata.toFixed(2);
-}
+  }
 
-document.addEventListener("DOMContentLoaded", function() {
-	subtituteData()
-});
+

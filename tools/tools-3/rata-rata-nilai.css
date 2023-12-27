@@ -1,5 +1,6 @@
 html {
   font-family: Lato;
+  scroll-behavior: smooth;
 }
 .tabel1,
 .tabel2 {
@@ -47,6 +48,10 @@ td {
 }
 a {
   text-decoration: none;
+  color: #1e90ff;
+}
+a:hover {
+  text-decoration: underline;
 }
 .warna1 {
   background-color: #1e90ff;
@@ -68,7 +73,43 @@ h1 {
 #tabelNilai tr:nth-child(even) {
   background-color: #1ef2ff;
 }
+.inputContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .inputContainer label,
+    .inputContainer input {
+        margin-right: 10px;
+    }
+    input {
+      width: 50px;
+    }
+    label, input {
+      margin: 5px;
+    }
+    .button2 {
+      background-color: #1e90ff;
+  color: white;
+      font-weight: bold;
+     margin: 15px;
+  text-align: center;
+  font-size: 17px;
+  padding: 15px 30px;
+  
+  border: 2px solid #1e90ff;
+}
 
+.button2:hover {
+  color: #1e90ff;
+  background-color: white; 
+}
+#hideThis {
+  display: none;
+}
+h4 {
+  margin: 0 auto;
+}
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 23px;

@@ -314,3 +314,21 @@ for (let i = 1; i <= 5; i++) {
   }
 
 
+function ubahNilai() {
+  pai.splice(0, pai.length);
+  ppkn.splice(0, ppkn.length);
+  bind.splice(0, bind.length);
+  mtkw.splice(0, mtkw.length);
+  sjr.splice(0, sjr.length);
+  bing.splice(0, bing.length);
+  snb.splice(0, snb.length);
+  pjok.splice(0, pjok.length);
+  pkwu.splice(0, pkwu.length);
+  mtkp.splice(0, mtkp.length);
+  bio.splice(0, bio.length);
+  fis.splice(0, fis.length);
+  kim.splice(0, kim.length);
+  eko.splice(0, eko.length);
+  geo.splice(0, geo.length);
+  mlo.splice(0, mlo.length);
+}

@@ -1,6 +1,5 @@
 html {
   font-family: Lato;
-  scroll-behavior: smooth;
 }
 .tabel1,
 .tabel2 {
@@ -17,11 +16,16 @@ html {
 .tabel1 tbody tr td {
   font-size: 13px;
 }
-.tabel2 thead tr th {
-  font-size: 15px;
+.tabel2 {
+  width: 85%;
+  margin: 0 auto;
+  background-color: #1ef2ff;
 }
-.tabel2 tbody tr td {
+.tabel2 td {
   font-size: 13px;
+  font-weight: 600;
+  border-style: none;
+  border: 0;
 }
 .head {
   font-size: 10px;
@@ -46,13 +50,6 @@ td {
 .line-top {
   border-top: 2px solid;
 }
-a {
-  text-decoration: none;
-  color: #1e90ff;
-}
-a:hover {
-  text-decoration: underline;
-}
 .warna1 {
   background-color: #1e90ff;
   font-size: 20px;
@@ -73,33 +70,23 @@ h1 {
 #tabelNilai tr:nth-child(even) {
   background-color: #1ef2ff;
 }
-.inputContainer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .inputContainer label,
-    .inputContainer input {
-        margin-right: 10px;
-    }
-    input {
-      width: 50px;
-    }
-    label, input {
-      margin: 5px;
-    }
-    .button2 {
-      background-color: #1e90ff;
+input {
+  width: 50px;
+}
+label, input {
+  margin: 5px;
+}
+.button2 {
+  background-color: #1e90ff;
   color: white;
-      font-weight: bold;
-     margin: 15px;
+  font-weight: bold;
+  margin: 15px;
   text-align: center;
-  font-size: 17px;
-  padding: 15px 30px;
-  
+  font-size: 15px;
+  padding: 10px;
+  width: 35%;
   border: 2px solid #1e90ff;
 }
-
 .button2:hover {
   color: #1e90ff;
   background-color: white; 
@@ -107,18 +94,12 @@ h1 {
 #hideThis {
   display: none;
 }
-h4 {
-  margin: 0 auto;
-}
+
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 23px;
   }
-  h5 {
-    width: 85%;
-  }
-  .tabel1,
-  .tabel2 {
+  .tabel1, .tabel2 {
     width: 100%;
   }
   .tabel1,
@@ -130,13 +111,7 @@ h4 {
   .tabel1 thead tr th {
     font-size: 11px;
   }
-  .tabel2 thead tr th {
-    font-size: 11px;
-  }
   .tabel1 tbody tr td {
-    font-size: 11px;
-  }
-  .tabel2 tbody tr td {
     font-size: 11px;
   }
   tr {

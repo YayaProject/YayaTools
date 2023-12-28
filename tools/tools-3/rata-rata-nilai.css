@@ -55,6 +55,9 @@ td {
 .line-top {
   border-top: 2px solid;
 }
+.text-left {
+  text-align: left;
+}
 .warna1 {
   background-color: #1e90ff;
   font-size: 20px;

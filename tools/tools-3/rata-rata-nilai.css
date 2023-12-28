@@ -21,9 +21,17 @@ html {
   margin: 0 auto;
   background-color: #1ef2ff;
 }
-.tabel2 td {
-  font-size: 13px;
+.tabel2 tr th {
+  text-align: center;
+  font-size: 18px;
   font-weight: 600;
+  border-style: none;
+  border: 0;
+}
+.tabel2 tr td {
+  text-align: left;
+  font-size: 15px;
+  font-weight: 500;
   border-style: none;
   border: 0;
 }
@@ -32,9 +40,6 @@ html {
 }
 .box {
   width: 7%;
-}
-.box2 {
-  width: 10%;
 }
 th,
 td,
@@ -67,11 +72,8 @@ h1 {
 .tabel1 tbody tr:nth-child(even) {
   background-color: #1ef2ff;
 }
-#tabelNilai tr:nth-child(even) {
-  background-color: #1ef2ff;
-}
 input {
-  width: 50px;
+  width: 30px;
 }
 label, input {
   margin: 5px;

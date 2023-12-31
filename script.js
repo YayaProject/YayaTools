@@ -9,7 +9,6 @@ sr.reveal('.animation-text1',{delay: 100});
 sr.reveal('.animation-text2',{delay: 200});
 sr.reveal('.animation-text3',{delay: 300});
 sr.reveal('.contact-icons',{delay: 400});
-sr.reveal('.footer',{delay: 500});
 sr.reveal('.project',{delay: 300});
 
 const srR = ScrollReveal({

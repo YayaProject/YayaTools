@@ -1,3 +1,25 @@
+const sr = ScrollReveal({
+        origin: 'top',
+        distance: '80px',
+        duration: 2000,
+        reset: true     
+ });
+
+sr.reveal('.animation-text1',{delay: 100});
+sr.reveal('.animation-text2',{delay: 200});
+sr.reveal('.animation-text3',{delay: 300});
+sr.reveal('.contact-icons',{delay: 400});
+sr.reveal('.footer',{delay: 500});
+sr.reveal('.project',{delay: 300});
+
+const srR = ScrollReveal({
+        origin: 'bottom',
+        distance: '50px',
+        duration: 2000,
+        reset: true     
+ });
+srR.reveal('.animation-text22',{delay: 200});
+
 document.getElementById("info-project1").onclick = function () {
   Swal.fire(
     "Kalkulator",

@@ -1,15 +1,6 @@
-
-// FORMAT PENGISIAN NILAI RAPOR SEMESTER 1 - 5
-// const mapel = [
-// S1-P, S1-K, S2-P, S2-K, 
-// 0, 0, 
-// S3, S4, S5
-// ];
-
-	
-  let pai = [];
-  let ppkn = [];
-  let bind = [];
+let pai = [];
+let ppkn = [];
+let bind = [];
 let mtkw = [];
 let sjr = [];
 let bing = [];

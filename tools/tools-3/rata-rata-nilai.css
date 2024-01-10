@@ -99,6 +99,9 @@ label, input {
 #hideThis {
   display: none;
 }
+li {
+  margin-bottom: 8px;
+}
 
 @media screen and (max-width: 600px) {
   h1 {

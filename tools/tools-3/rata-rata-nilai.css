@@ -102,6 +102,9 @@ label, input {
 li {
   margin-bottom: 8px;
 }
+span {
+  color: blue;
+}
 
 @media screen and (max-width: 600px) {
   h1 {

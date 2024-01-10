@@ -302,6 +302,14 @@ for (let i = 1; i <= 5; i++) {
   document.getElementById("ekoRataRata").innerText = ekoRataRata.toFixed(2);
   document.getElementById("geoRataRata").innerText = geoRataRata.toFixed(2);
   document.getElementById("mloRataRata").innerText = mloRataRata.toFixed(2);
+  
+  Swal.fire({
+  position: 'top-end',
+  icon: 'success',
+  title: 'Nilai Berhasil Disimpan',
+  showConfirmButton: false,
+  timer: 1000
+});
   }
 
 
@@ -322,4 +330,13 @@ function ubahNilai() {
   eko.splice(0, eko.length);
   geo.splice(0, geo.length);
   mlo.splice(0, mlo.length);
+  
+  Swal.fire({
+  position: 'top-end',
+  icon: 'success',
+  title: 'Nilai Berhasil Diubah',
+  text: 'Silahkan Tekan Tombol Simpan',
+});
 }
+
+      

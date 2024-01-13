@@ -374,7 +374,7 @@ for (let i = 1; i <= 5; i++) {
   document.getElementById("hasil").style.display = "block";
   
   Swal.fire({
-  position: 'top-end',
+  position: 'top',
   icon: 'success',
   title: 'Nilai Berhasil Disimpan',
   text: 'Scrool ke Bawah',
@@ -404,9 +404,11 @@ function ubahNilai() {
   document.getElementById("hasil").style.display = "none";
   
   Swal.fire({
-  position: 'top-end',
+  position: 'top',
   icon: 'success',
   title: 'Nilai Berhasil Diubah',
   text: 'Silahkan Tekan Tombol Simpan',
+  showConfirmButton: false,
+  timer: 2000
 });
 }

@@ -88,6 +88,9 @@ p {
 h1 {
   text-align: center;
 }
+#jumlahRataRataSemester {
+  background-color: #1e90ff;
+}
 .tabel1 tbody tr:nth-child(even) {
   background-color: #1ef2ff;
 }
@@ -97,16 +100,28 @@ input {
 label, input {
   margin: 5px;
 }
-.button2 {
+.button1 {
   font-family: 'Poppins', Sans-Serif;
   background-color: #1e90ff;
   color: white;
-  margin: 15px;
+  margin: 5px;
   font-weight: 700;
   text-align: center;
   font-size: 15px;
   padding: 10px;
-  width: 35%;
+  width: 10%;
+  border: 2px solid #1e90ff;
+}
+.button2 {
+  font-family: 'Poppins', Sans-Serif;
+  background-color: #1e90ff;
+  color: white;
+  margin: 5px;
+  font-weight: 700;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 30%;
   border: 2px solid #1e90ff;
 }
 .button2:hover {

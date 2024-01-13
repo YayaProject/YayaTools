@@ -15,6 +15,7 @@ let eko = [];
 let geo = [];
 let mlo = [];
 
+document.getElementById("show-s1-p").style.backgroundColor = "#1e90ff";
 // SEMBUNYIKAN TABEL
 document.getElementById("s1-k").style.display = "none";
 document.getElementById("s2-p").style.display = "none";
@@ -26,6 +27,13 @@ document.getElementById("s2-p").style.display = "none";
         
   // MUNCULKAN TABEL
   document.getElementById("show-s1-p").addEventListener("click", function() {
+    document.getElementById("show-s1-p").style.backgroundColor = "#1e90ff";
+    document.getElementById("show-s1-k").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s2-p").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s2-k").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s3").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s4").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s5").style.backgroundColor = "#1ef2ff";
     document.getElementById("s1-p").style.display = "block";
     document.getElementById("s1-k").style.display = "none";
     document.getElementById("s2-p").style.display = "none";
@@ -35,6 +43,13 @@ document.getElementById("s2-p").style.display = "none";
     document.getElementById("s5").style.display = "none";
 });
 document.getElementById("show-s1-k").addEventListener("click", function() {
+  document.getElementById("show-s1-p").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s1-k").style.backgroundColor = "#1e90ff";
+    document.getElementById("show-s2-p").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s2-k").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s3").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s4").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s5").style.backgroundColor = "#1ef2ff";
     document.getElementById("s1-p").style.display = "none";
     document.getElementById("s1-k").style.display = "block";
     document.getElementById("s2-p").style.display = "none";
@@ -44,6 +59,13 @@ document.getElementById("show-s1-k").addEventListener("click", function() {
     document.getElementById("s5").style.display = "none";
 });
 document.getElementById("show-s2-p").addEventListener("click", function() {
+  document.getElementById("show-s1-p").style.backgroundColor = "#1ef2ff";
+  document.getElementById("show-s1-k").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s2-p").style.backgroundColor = "#1e90ff";
+    document.getElementById("show-s2-k").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s3").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s4").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s5").style.backgroundColor = "#1ef2ff";
     document.getElementById("s1-p").style.display = "none";
     document.getElementById("s1-k").style.display = "none";
     document.getElementById("s2-p").style.display = "block";
@@ -53,6 +75,13 @@ document.getElementById("show-s2-p").addEventListener("click", function() {
     document.getElementById("s5").style.display = "none";
 });
 document.getElementById("show-s2-k").addEventListener("click", function() {
+  document.getElementById("show-s1-p").style.backgroundColor = "#1ef2ff";
+  document.getElementById("show-s1-k").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s2-p").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s2-k").style.backgroundColor = "#1e90ff";
+    document.getElementById("show-s3").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s4").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s5").style.backgroundColor = "#1ef2ff";
     document.getElementById("s1-p").style.display = "none";
     document.getElementById("s1-k").style.display = "none";
     document.getElementById("s2-p").style.display = "none";
@@ -62,6 +91,13 @@ document.getElementById("show-s2-k").addEventListener("click", function() {
     document.getElementById("s5").style.display = "none";
 });
 document.getElementById("show-s3").addEventListener("click", function() {
+  document.getElementById("show-s1-p").style.backgroundColor = "#1ef2ff";
+  document.getElementById("show-s1-k").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s2-p").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s2-k").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s3").style.backgroundColor = "#1e90ff";
+    document.getElementById("show-s4").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s5").style.backgroundColor = "#1ef2ff";
     document.getElementById("s1-p").style.display = "none";
     document.getElementById("s1-k").style.display = "none";
     document.getElementById("s2-p").style.display = "none";
@@ -71,6 +107,13 @@ document.getElementById("show-s3").addEventListener("click", function() {
     document.getElementById("s5").style.display = "none";
 });
 document.getElementById("show-s4").addEventListener("click", function() {
+  document.getElementById("show-s1-p").style.backgroundColor = "#1ef2ff";
+  document.getElementById("show-s1-k").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s2-p").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s2-k").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s3").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s4").style.backgroundColor = "#1e90ff";
+    document.getElementById("show-s5").style.backgroundColor = "#1ef2ff";
     document.getElementById("s1-p").style.display = "none";
     document.getElementById("s1-k").style.display = "none";
     document.getElementById("s2-p").style.display = "none";
@@ -80,6 +123,13 @@ document.getElementById("show-s4").addEventListener("click", function() {
     document.getElementById("s5").style.display = "none";
 });
 document.getElementById("show-s5").addEventListener("click", function() {
+  document.getElementById("show-s1-p").style.backgroundColor = "#1ef2ff";
+  document.getElementById("show-s1-k").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s2-p").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s2-k").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s3").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s4").style.backgroundColor = "#1ef2ff";
+    document.getElementById("show-s5").style.backgroundColor = "#1e90ff";
     document.getElementById("s1-p").style.display = "none";
     document.getElementById("s1-k").style.display = "none";
     document.getElementById("s2-p").style.display = "none";
@@ -88,6 +138,7 @@ document.getElementById("show-s5").addEventListener("click", function() {
     document.getElementById("s4").style.display = "none";
     document.getElementById("s5").style.display = "block";
 });
+
   
   function simpanNilai() {
     for (let i = 1; i <= 9; i++) {
@@ -409,6 +460,6 @@ function ubahNilai() {
   title: 'Nilai Berhasil Diubah',
   text: 'Silahkan Tekan Tombol Simpan',
   showConfirmButton: false,
-  timer: 2000
+  timer: 1500
 });
 }

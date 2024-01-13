@@ -10,7 +10,9 @@
 <meta name="description" content="" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato'>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
   <link rel="stylesheet" href="rata-rata-nilai.css" />
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CGKTDTK7Y7"></script>
@@ -37,11 +39,28 @@
   </ul>
   <br>
   <h3>B. Input Nilai Setiap Mata Pelajaran</h3>
-  <form>
+    
+<table class="tabel1" id="s">
+  <tr class="warna1">
+    <th colspan="7" class="head1">PILIH SEMESTER</th>
+  </tr>
+  <tr class="warna1 , line-top">
+    <th class="head1 , box2" id="show-s1-p"><a href="#s">I-P</a></th>
+    <th class="head1 , box2" id="show-s1-k"><a href="#s">I-K</a></th>
+    <th class="head1 , box2" id="show-s2-p"><a href="#s">II-P</a></th>
+    <th class="head1 , box2" id="show-s2-k"><a href="#s">II-K</a></th>
+    <th class="head1 , box2" id="show-s3"><a href="#s">III</a></th>
+    <th class="head1 , box2" id="show-s4"><a href="#s">IV</a></th>
+    <th class="head1 , box2" id="show-s5"><a href="#s">V</a></th>
+  </tr>
+</table>
+    <br>
+   <form>
 <!-- SEMESTER I PENGETAHUAN -->
+<div id="s1-p">
 <table class="tabel2">
   <tr>
-    <th colspan="3">Semester I-Pengetahuan</th>
+    <th colspan="3" class="warna2">Semester I-Pengetahuan</th>
   </tr>
   <tr>
     <td>
@@ -189,12 +208,13 @@
   </tr>
 </table>
 <br>
-<br>
+</div>
 
 <!-- SEMESTER I KETERAMPILAN -->
+<div id="s1-k">
 <table class="tabel2">
   <tr>
-    <th colspan="3">Semester I-Keterampilan</th>
+    <th colspan="3" class="warna2">Semester I-Keterampilan</th>
   </tr>
   <tr>
     <td>
@@ -342,12 +362,13 @@
   </tr>
 </table>
 <br>
-<br>
+</div>
 
 <!-- SEMESTER II PENGETAHUAN -->
+<div id="s2-p">
 <table class="tabel2">
   <tr>
-    <th colspan="3">Semester II-Pengetahuan</th>
+    <th colspan="3" class="warna2">Semester II-Pengetahuan</th>
   </tr>
   <tr>
     <td>
@@ -495,12 +516,13 @@
   </tr>
 </table>
 <br>
-<br>
+</div>
 
 <!-- SEMESTER II KETERAMPILAN -->
+<div id="s2-k">
 <table class="tabel2">
   <tr>
-    <th colspan="3">Semester II-Keterampilan</th>
+    <th colspan="3" class="warna2">Semester II-Keterampilan</th>
   </tr>
   <tr>
     <td>
@@ -648,12 +670,13 @@
   </tr>
 </table>
 <br>
-<br>
+</div>
 
 <!-- SEMESTER III -->
+<div id="s3">
 <table class="tabel2">
   <tr>
-    <th colspan="3">Semester III</th>
+    <th colspan="3" class="warna2">Semester III</th>
   </tr>
   <tr>
     <td>
@@ -783,12 +806,13 @@
   </tr>
 </table>
 <br>
-<br>
+</div>
 
 <!-- SEMESTER IV -->
+<div id="s4">
 <table class="tabel2">
   <tr>
-    <th colspan="3">Semester IV</th>
+    <th colspan="3" class="warna2">Semester IV</th>
   </tr>
   <tr>
     <td>
@@ -918,12 +942,13 @@
   </tr>
 </table>
 <br>
-<br>
+</div>
 
 <!-- SEMESTER V -->
+<div id="s5">
 <table class="tabel2">
   <tr>
-    <th colspan="3">Semester V</th>
+    <th colspan="3" class="warna2">Semester V</th>
   </tr>
   <tr>
     <td>
@@ -1053,6 +1078,7 @@
   </tr>
 </table>
 <br>
+</div>
 
 <!-- DATA NILAI 0 -->
 <div id="hideThis">
@@ -1155,14 +1181,15 @@
 </div>
 
 <center>
-    <button class="button2" type="button" onclick="simpanNilai()">Simpan</button>
-        <button class="button2" type="button" onclick="ubahNilai()">Ubah</button>
+  
+    <button class="button2" type="button" onclick="simpanNilai()">SIMPAN</button>
+        <button class="button2" type="button" onclick="ubahNilai()">UBAH</button>
      <p style="font-size:12px">Note : Jika ada nilai yang telah di ubah, maka tekan tombol UBAH lalu tekan lagi tombol SIMPAN.</p>
 </center>
 
 </form>
   <br>
-  
+  <div id="hasil">
   <h3>C. Hasil Rata-Rata Nilai</h3>
 
   <table class="tabel1">
@@ -1365,7 +1392,9 @@
     </tr>
    </tbody>
   </table>
+  
   <br>
+  </div>
 
   <footer> Copyright © 2023 Yaya Project </footer>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

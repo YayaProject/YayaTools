@@ -15,6 +15,80 @@ let eko = [];
 let geo = [];
 let mlo = [];
 
+// SEMBUNYIKAN TABEL
+document.getElementById("s1-k").style.display = "none";
+document.getElementById("s2-p").style.display = "none";
+ document.getElementById("s2-k").style.display = "none";
+ document.getElementById("s3").style.display = "none";
+ document.getElementById("s4").style.display = "none";
+  document.getElementById("s5").style.display = "none";
+  document.getElementById("hasil").style.display = "none";
+        
+  // MUNCULKAN TABEL
+  document.getElementById("show-s1-p").addEventListener("click", function() {
+    document.getElementById("s1-p").style.display = "block";
+    document.getElementById("s1-k").style.display = "none";
+    document.getElementById("s2-p").style.display = "none";
+    document.getElementById("s2-k").style.display = "none";
+    document.getElementById("s3").style.display = "none";
+    document.getElementById("s4").style.display = "none";
+    document.getElementById("s5").style.display = "none";
+});
+document.getElementById("show-s1-k").addEventListener("click", function() {
+    document.getElementById("s1-p").style.display = "none";
+    document.getElementById("s1-k").style.display = "block";
+    document.getElementById("s2-p").style.display = "none";
+    document.getElementById("s2-k").style.display = "none";
+    document.getElementById("s3").style.display = "none";
+    document.getElementById("s4").style.display = "none";
+    document.getElementById("s5").style.display = "none";
+});
+document.getElementById("show-s2-p").addEventListener("click", function() {
+    document.getElementById("s1-p").style.display = "none";
+    document.getElementById("s1-k").style.display = "none";
+    document.getElementById("s2-p").style.display = "block";
+    document.getElementById("s2-k").style.display = "none";
+    document.getElementById("s3").style.display = "none";
+    document.getElementById("s4").style.display = "none";
+    document.getElementById("s5").style.display = "none";
+});
+document.getElementById("show-s2-k").addEventListener("click", function() {
+    document.getElementById("s1-p").style.display = "none";
+    document.getElementById("s1-k").style.display = "none";
+    document.getElementById("s2-p").style.display = "none";
+    document.getElementById("s2-k").style.display = "block";
+    document.getElementById("s3").style.display = "none";
+    document.getElementById("s4").style.display = "none";
+    document.getElementById("s5").style.display = "none";
+});
+document.getElementById("show-s3").addEventListener("click", function() {
+    document.getElementById("s1-p").style.display = "none";
+    document.getElementById("s1-k").style.display = "none";
+    document.getElementById("s2-p").style.display = "none";
+    document.getElementById("s2-k").style.display = "none";
+    document.getElementById("s3").style.display = "block";
+    document.getElementById("s4").style.display = "none";
+    document.getElementById("s5").style.display = "none";
+});
+document.getElementById("show-s4").addEventListener("click", function() {
+    document.getElementById("s1-p").style.display = "none";
+    document.getElementById("s1-k").style.display = "none";
+    document.getElementById("s2-p").style.display = "none";
+    document.getElementById("s2-k").style.display = "none";
+    document.getElementById("s3").style.display = "none";
+    document.getElementById("s4").style.display = "block";
+    document.getElementById("s5").style.display = "none";
+});
+document.getElementById("show-s5").addEventListener("click", function() {
+    document.getElementById("s1-p").style.display = "none";
+    document.getElementById("s1-k").style.display = "none";
+    document.getElementById("s2-p").style.display = "none";
+    document.getElementById("s2-k").style.display = "none";
+    document.getElementById("s3").style.display = "none";
+    document.getElementById("s4").style.display = "none";
+    document.getElementById("s5").style.display = "block";
+});
+  
   function simpanNilai() {
     for (let i = 1; i <= 9; i++) {
       const nilaiPAI = parseInt(document.getElementById(`pai${i}`).value);
@@ -81,13 +155,7 @@ for (let i = 1; i <= 5; i++) {
     const nilaiMlo = parseInt(document.getElementById(`mlo${i}`).value);
     mlo.push(nilaiMlo);
 }
-
-
-        document.getElementById("hideThis").style.display = "none";
-    
-  
-
-
+   
 	const arrays = [pai, ppkn, bind, mtkw, sjr, bing, snb, pjok, pkwu, mtkp, bio, fis, kim, eko, geo, mlo];
 
 	arrays.forEach(arr => {
@@ -303,15 +371,17 @@ for (let i = 1; i <= 5; i++) {
   document.getElementById("geoRataRata").innerText = geoRataRata.toFixed(2);
   document.getElementById("mloRataRata").innerText = mloRataRata.toFixed(2);
   
+  document.getElementById("hasil").style.display = "block";
+  
   Swal.fire({
   position: 'top-end',
   icon: 'success',
   title: 'Nilai Berhasil Disimpan',
+  text: 'Scrool ke Bawah',
   showConfirmButton: false,
-  timer: 1000
+  timer: 1500
 });
   }
-
 
 function ubahNilai() {
   pai.splice(0, pai.length);
@@ -331,6 +401,8 @@ function ubahNilai() {
   geo.splice(0, geo.length);
   mlo.splice(0, mlo.length);
   
+  document.getElementById("hasil").style.display = "none";
+  
   Swal.fire({
   position: 'top-end',
   icon: 'success',
@@ -338,5 +410,3 @@ function ubahNilai() {
   text: 'Silahkan Tekan Tombol Simpan',
 });
 }
-
-      

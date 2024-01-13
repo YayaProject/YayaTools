@@ -112,6 +112,10 @@ label, input {
   width: 10%;
   border: 2px solid #1e90ff;
 }
+.button1:hover {
+  color: #1e90ff;
+  background-color: white; 
+}
 .button2 {
   font-family: 'Poppins', Sans-Serif;
   background-color: #1e90ff;

@@ -1,0 +1,104 @@
+html {
+  font-family: "Poppins", Sans-Serif;
+}
+.menu {
+  font-size: 20px;
+  display: block;
+  background-color: #8AAAE4;
+  font-weight: 700;
+  padding: 10px 10px 10px 10px;
+  border-bottom: 2px solid black;
+}
+.menu:hover {
+  background-color: black;
+}
+#menu1 {
+  background-color: #8AAAE4;
+  padding: 0;
+}
+summary {
+  font-size: 20px;
+  padding: 10px;
+  font-weight: 700;
+  background-color: #8AAAE4;
+}
+#right {
+  float: right;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: #8AAAE4;
+}
+.tabel1 {
+  border-collapse: collapse;
+  width: 100%;
+  border: 2px solid black;
+  text-align: center;
+}
+
+th, td,
+tr {
+  padding: 8px;
+  border: 1px solid black;
+  border-left: 2px solid black;
+}
+td {
+  font-weight: 600;
+}
+.kolom1 {
+  width: 10%;
+}
+.kolom2 {
+  width: 18%;
+}
+.kolom3 {
+  width: 24%;
+}
+.kolom4 {
+  width: 36%;
+}
+h1 {
+  text-align: center;
+}
+.warna1 {
+  background-color: #8AAAE4;
+  font-size: 20px;
+  border: 2px solid black;
+}
+.warna2 {
+  background-color: #EA738D;
+  border: 2px solid black;
+  color: white;
+}
+footer {
+  font-size: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    summary, .menu {
+    font-size: 14px;
+    padding: 5px;
+  }
+  .li-footer {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  h1 {
+    font-size: 17px;
+  }
+  
+  th, td, 
+  tr {
+    padding: 4px;
+  }
+  tr {
+    font-size: 8px;
+  }
+  .warna1 {
+    font-size: 11px;
+  }
+}

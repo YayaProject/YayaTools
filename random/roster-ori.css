@@ -34,8 +34,8 @@ a:hover {
 }
 .tabel1 {
   border-collapse: collapse;
-  width: 100%;
-  border: 2px solid black;
+  width: 88%;
+  border: 1.7px solid black;
   text-align: center;
 }
 
@@ -43,7 +43,7 @@ th, td,
 tr {
   padding: 8px;
   border: 1px solid black;
-  border-left: 2px solid black;
+  border-left: 1.7px solid black;
 }
 td {
   font-weight: 600;
@@ -66,11 +66,11 @@ h1 {
 .warna1 {
   background-color: #8AAAE4;
   font-size: 20px;
-  border: 2px solid black;
+  border: 1.7px solid black;
 }
 .warna2 {
   background-color: #EA738D;
-  border: 2px solid black;
+  border: 1.7px solid black;
   color: white;
 }
 footer {

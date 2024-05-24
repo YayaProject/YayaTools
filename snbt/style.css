@@ -15,7 +15,9 @@ body {
   display: flex;
   font-family: 'Poppins', Sans-Serif
 }
-
+img {
+  width: 80%;
+}
 .container {
   color: #f0fcff;
   margin: 0 auto;
@@ -23,20 +25,23 @@ body {
 }
 
 h1 {
+  font-size: 80px;
   font-weight: 700;
-  text-transform: uppercase;
 }
-
+h5 {
+  font-size: 40px;
+  font-weight: 300;
+}
 li {
   display: inline-block;
-  
+  font-size: 50px;
   list-style-type: none;
   padding: 1em;
-  text-transform: uppercase;
   font-weight: 600;
 }
 
 li span {
+  font-size: 100px;
   display: block;
 }
 
@@ -53,7 +58,9 @@ li span {
   h1 {
     font-size: 20px;
   }
-  
+  h5 {
+  font-size: 13px;
+}
   li {
     font-size: 15px;
   }

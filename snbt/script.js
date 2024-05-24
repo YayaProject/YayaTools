@@ -6,12 +6,13 @@
 
   // I'm adding this section so I don't have to keep updating this pen every year :-)
   // Remove this if you don't need it
+  
   let today = new Date(),
       dd = String(today.getDate()).padStart(2, "0"),
       mm = String(today.getMonth() + 1).padStart(2, "0"),
       yyyy = today.getFullYear(),
       nextYear = yyyy + 1,
-      dayMonth = "06/12/",
+      dayMonth = "06/13/",
       birthday = dayMonth + yyyy + " 16:00:00"; // Set time to 16:00:00
 
   today = mm + "/" + dd + "/" + yyyy + " " + String(today.getHours()).padStart(2, "0") + ":" + String(today.getMinutes()).padStart(2, "0") + ":" + String(today.getSeconds()).padStart(2, "0");
@@ -23,7 +24,8 @@
   
   const countDown = new Date(birthday).getTime(),
         x = setInterval(function() {    
-
+const d = new Date();
+document.getElementById("demo").innerHTML = d;
           const now = new Date().getTime(),
                 distance = countDown - now;
 
@@ -34,7 +36,6 @@
 
           // Do something later when date is reached
           if (distance < 0) {
-            document.getElementById("headline").innerText = "It's my birthday!";
             document.getElementById("countdown").style.display = "none";
             document.getElementById("content").style.display = "block";
             clearInterval(x);
@@ -42,3 +43,4 @@
           // Seconds
         }, 0);
 }());
+
